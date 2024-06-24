@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <style>
+        
+        .main-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center items horizontally */
+        }
+
+        .col-image-mme {
+            margin: 0;
+            padding: 0;
+            padding-top: 0;
+
+        }
+
+        .custom-img {
+            object-fit: cover;
+            padding: 0 10px 10px 0;
+            margin: 0;
+        }
+
+        .image-container {
+            padding: 0;
+            margin: 0;
+        }
+
+        .icon-border {
+            border: 1px solid #ccc; /* Light border color */
+            border-radius: 5px; /* Optional: Rounded corners */
+            padding: 5px; /* Optional: Padding around the icon */
+        }
+    
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="navbar-brand d-flex gap-1 align-items-center">
+                        <span class="navbar-logo"><i class="fab fa-instagram"></i></span>
+                        <h4 class="navbar-title">Instagram</h4>
+                    </div>
+                    <div class="d-flex gap-1">
+                        <!-- Modal Prueba -->
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Create a new post
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row d-flex-block justify-content-center">
+                                            <p class="m-0 p-0 pb-1 pl-1" style="font-weight: 400;">Caption:</p>
+                                            <textarea id="caption-box" name="caption-box" rows="4" cols="35"></textarea>
+                                            <div class="col p-0 mt-2">
+                                                <i class="fa-solid fa-camera p-2 ml-0 mr-2 icon-border"></i>
+                                                <i class="fa-solid fa-location-dot p-2 icon-border"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-success">Save changes</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <!-- Modal Prueba -->
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-gear"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li><a class="dropdown-item" href="#">Profile</a></li>
+                              <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                              <li><a class="dropdown-item" href="#">Privacy and Settings</a></li>
+                              <div class="dropdown-divider"></div>
+                              <li><a class="dropdown-item" style="color: rgb(196, 54, 54);" href="#">Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header> 
+        <main>
+            <ul class="nav nav-pills justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html" aria-selected="true"><i class="fa-solid fa-table-cells"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index2.html"><i class="fa-solid fa-square"></i></a>
+                </li>
+              </ul>
+            <div class="container-fluid d-flex justify-content-center">
+                        <div class="main-grid m-2 d-flex justify-content-center">
+                            <div class="row row -cols-xs-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+                                <div class="col-xs-1 col-image-mme d-flex   justify-content-center ">
+                                    <div class="img-container">
+                                        <img src="https://picsum.photos/id/1015/600/400" style="width: 420px; height: 350px;" alt="Image 1" class="img-fluid d-flex justify-content-center custom-img">
+                                    </div>
+                                </div>
+                                <div class="col-xs-1 col-image-mme d-flex   justify-content-center">
+                                    <div class="img-container">
+                                        <img src="https://picsum.photos/id/1016/600/400" style="width: 420px; height: 350px;" alt="Image 2" class="img-fluid custom-img">
+                                    </div>
+                                </div>
+                                <div class="col-xs-1 col-image-mme d-flex   justify-content-center">
+                                    <div class="img-container">
+                                        <img src="https://picsum.photos/id/1018/600/400" style="width: 420px; height: 350px;" alt="Image 3" class="img-fluid custom-img">
+                                    </div>
+                                </div>
+                                <div class="col-xs-1 col-image-mme d-flex   justify-content-center">
+                                    <div class="img-container">
+                                        <img src="https://picsum.photos/id/102/600/400" style="width: 420px; height: 350px;" alt="Image 4" class="img-fluid custom-img">
+                                        <!-- <img src="https://hackspirit.com/wp-content/uploads/2021/06/Copy-of-Rustic-Female-Teen-Magazine-Cover.jpg" alt="Image 4" class="img-fluid custom-img"> -->
+                                    </div>
+                                </div>
+                                <div class="col-xs-1 col-image-mme d-flex   justify-content-center">
+                                    <div class="img-container">
+                                        <img src="https://picsum.photos/id/1020/600/400" style="width: 420px; height: 350px;" alt="Image 5" class="img-fluid custom-img">
+                                    </div>
+                                </div>
+                                <div class="col-xs-1 col-image-mme d-flex   justify-content-center">
+                                    <div class="img-container">
+                                        <img src="https://picsum.photos/id/1021/600/400" style="width: 420px; height: 350px;" alt="Image 6" class="img-fluid custom-img">
+                                        <!-- <img src="https://www.painteq.com/wp-content/uploads/2022/07/5-swimming-exercises-to-help-si-joint-pain.jpg" alt="Image 6" class="img-fluid custom-img"> -->
+                                    </div>
+                                </div>
+                                <div class="col-xs-1 col-image-mme d-flex   justify-content-center">
+                                    <div class="img-container">
+                                        <img src="https://picsum.photos/id/1022/600/400" style="width: 420px; height: 350px;" alt="Image 7" class="img-fluid custom-img">
+                                    </div>
+                                </div>
+                                <div class="col-xs-1 col-image-mme d-flex   justify-content-center">
+                                    <div class="img-container">
+                                        <img src="https://picsum.photos/id/1023/600/400" style="width: 420px; height: 350px;" alt="Image 8" class="img-fluid custom-img">
+                                    </div>
+                                </div>
+                                <div class="col-xs-1 col-image-mme d-flex   justify-content-center">
+                                    <div class="img-container">
+                                        <img src="https://picsum.photos/id/1024/600/400" style="width: 420px; height: 350px;" alt="Image 9" class="img-fluid custom-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- </div> -->
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+            <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+        </main>       
+
+    </body>
+</html>
